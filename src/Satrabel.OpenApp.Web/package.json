@@ -14,7 +14,7 @@
         "babel-loader": "7.1.4",
         "babel-preset-env": "1.6.1",
         "css-loader": "0.25.0",
-        "element-ui": "2.3.4",
+        "element-ui": "^2.4.11",
         "event-source-polyfill": "0.0.12",
         "extract-text-webpack-plugin": "3.0.2",
         "file-loader": "1.1.5",
@@ -33,6 +33,6 @@
         "webpack-hot-middleware": "2.21.0"
     },
     "dependencies": {
-        "vuecrud": "git://github.com/sachatrauwaen/vuecrud.git#feature/SomeDecoupling"
+        "vuecrud": "git://github.com/sachatrauwaen/vuecrud.git#feature/grid-sorting"
     }
 }
