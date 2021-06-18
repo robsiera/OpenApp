@@ -130,6 +130,10 @@ namespace Satrabel.OpenApp.ProxyScripting
             */
             foreach (var action in controller.Actions.Values)
             {
+                // Skip actions with parameters without name, as this will generate a json with an empty (=invalid) key
+                if (action.Parameters.Any(x => string.IsNullOrWhiteSpace(x.Name)))
+                    continue;
+
                 AddActionScript(script, module, controller, action);
             }
         }
